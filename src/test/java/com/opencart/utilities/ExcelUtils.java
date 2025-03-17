@@ -14,7 +14,7 @@ public class ExcelUtils {
 	public static void main(String[] args) throws IOException {
 		getData("C:\\Users\\MANISHA\\eclipse-workspace\\Opencart_Automation\\testData\\LoginData.xlsx", "Sheet1");
 	}
-
+	// Method to read excel file
 	public static Object[][] getData(String filePath, String sheetName) throws IOException {
 
 		FileInputStream file = new FileInputStream(filePath);
