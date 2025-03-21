@@ -13,9 +13,10 @@ import com.opencart.utilities.ExcelUtils;
 
 public class LoginTest extends BaseTest {
 
-	
+
 	@Test (dataProvider = "logindata")
 	public void loginTest(String email, String password) {
+		logger.info("Login started");
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterEmail(email);
 		loginpage.enterPassword(password);
